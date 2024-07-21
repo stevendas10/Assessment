@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5: Content not Being Cached</title>
+</head>
+<body>
+    <h1>Content not Being Cached</h1>
+    <p><strong>Customer:</strong> After activating Cloudflare on my site, I am seeing that resources on my pages are not being cached. <code>curl -svo /dev/null roskolniv.us</code> shows <code>Cache-Control: no-store</code>. Why is Cloudflare’s caching not working on my site?</p>
+    <p><strong>Response:</strong></p>
+    <p>Thank you for your question.  The Cache-Control: no-store header indicates that caching is disabled for those resources. To make caching active, kindly:</p>
+    <ul>
+        <li>Remove the Cache-Control: no-store header from your server's response.</li>
+        <li>Make sure the appropriate caching headers, are set.</li>
+        <li>Make sure caching is turned on for the required resources by checking your Cloudflare Page Rules.</li>
+    </ul>
+    <p>If you need further assistance, please share your caching settings and headers for review.</p>
+    <p><a href="question6.html">Question 6</a></p>
+    <p><a href="index.html">Back to home</a></p>
+</body>
+</html>
